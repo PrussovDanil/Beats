@@ -1,0 +1,60 @@
+.offers{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.offers__top{
+  background: #F2F5F4;
+  width: 128px;
+  height: 128px;
+  border-radius:100%;
+  padding: 30px;
+}
+
+.offers__item{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  width: 276px;
+  position: relative;
+  padding: 0 3%;
+
+  &::after{
+    content: url('../../icon/Combined\ shape\ 2204.png');
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: translateX(50%);
+  }
+
+  &:last-child{
+    &::after{
+      display: none;
+    }
+  }
+}
+
+.offers__content{
+  text-align: center;
+}
+
+.offers__title{
+  font-family: Play;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 28px;
+  margin-bottom: 7px;
+}
+
+
+.offers__text{
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+}

@@ -1,0 +1,78 @@
+body{
+  font-family: "Alegreya Sans";
+
+  font-size: 26px;
+  line-height: 1.42;
+  
+  margin: 0;
+}
+
+a{
+  color: inherit;
+}
+
+p{
+  margin-top: 0;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+ul li{
+  list-style: none;
+}
+
+h1,h2,h3,h4{
+  margin: 0;
+  font-weight: normal;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body, html{
+  height: 100%;
+}
+
+img{
+  display: block;
+  min-width: 100%;
+  
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* отображаем курсор в виде руки при наведении; некоторые
+  считают, что необходимо оставлять стрелочный вид для кнопок */
+  cursor: pointer;
+}
+
+
+
+input {
+  outline:none;
+  border: none;
+
+}
+
+.wrapper{
+  display: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  min-width: 1100px;
+}
+
+
+
+.container{
+  margin: 0 auto;
+  width: $containerWidth;
+  
+}

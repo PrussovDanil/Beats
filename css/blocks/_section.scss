@@ -1,0 +1,72 @@
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+
+  &--hero {
+    background-color: $gray;
+    padding: 25px 0 65px;
+    position: relative;
+
+    &::after{
+      content:'';
+      position: absolute;
+      width: 46.32px;
+      height: 10.38px;
+      background: #C4C4C4;
+      transform: rotate(-45deg);
+      right: 22%;
+      bottom: 0;
+    }
+  }
+
+  &--offers {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+  }
+
+  &--reviews{
+    display: flex;
+    align-items: center;
+    padding: 64px 0;
+  }
+
+  &--order{
+    display: flex;
+    align-items: center;
+    background:url(../../img/background__form.png) center center / cover no-repeat;
+    color: #fff;
+  }
+}
+
+.section__top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.section__title{
+  font-family: Play;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 61px;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+
+.section__subtitle{
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+  text-align: center;
+  width: 590px;
+ 
+}
