@@ -6,6 +6,10 @@
     padding: 0 19%;
   }
   
+
+  @include phones{
+    padding: 0px 28%
+  }
 }
 
 .form__title{
@@ -83,4 +87,14 @@
 .form--input{
   display: flex;
   flex-direction: column;
+}
+
+
+.form__btns{
+  @include tablets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
 }

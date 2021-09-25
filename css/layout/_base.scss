@@ -90,5 +90,9 @@ input {
   margin: 0 auto;
   width: 95%;
   max-width: $containerWidth;
+
+  // @include phones{
+  //   max-width: 480px;
+  // }
   
 }

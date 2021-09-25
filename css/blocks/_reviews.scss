@@ -32,7 +32,13 @@
 
 .reviews__content{
   flex: 1;
-  padding: rem(32px) rem(26px) rem(30px) rem(36px)
+  padding: rem(32px) rem(26px) rem(30px) rem(36px);
+
+  @include phones{
+    padding:rem(25px) rem(195px);
+
+  }
+
 }
 
 .review__title{
