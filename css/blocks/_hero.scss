@@ -10,43 +10,77 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
+
+  @include tablets{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    &::before{
+      content:url(../../img/headphones700.png);
+      margin-bottom: 58px;
+    }
+  }
 }
 
 .hero__headphones {
   width: 100%;
-  max-width: 489px;
+  max-width: rem(489px);
   position: absolute;
   right: 0;
-  top: -60px;
+  top: rem(-60px);
+
+  @include tablets{
+    display:none;
+  }
 }
 
 .hero__text-section{
   width: 100%;
-  max-width: 400px;
-  margin-bottom: 100px;
+  max-width: rem(400px);
+  margin-bottom: rem(100px);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @include tablets{
+    align-items: center;
+    max-width: rem(663px); 
+  }
 }
 
 .hero__title{
   font-family: Play;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 52px;
-  margin-bottom: 14px;
+  font-size: rem(48px);
+  line-height: rem(52px);
+  margin-bottom: rem(14px);
 }
 
 .hero__subtitle{
-  font-size: 21px;
-  line-height: 25px;
-  margin-bottom: 35px;
+  font-size: rem(21px);
+  line-height: rem(25px);
+  margin-bottom: rem(35px);
+  @include tablets{
+    padding: 0 19%; 
+  }
+}
+
+.hero__possibilities{
+  @include tablets{
+    display: none;
+  }
 }
 
 .hero__item-img{
-  width: 41px;
-  height: 41px;
+  width: rem(41px);
+  height: rem(41px);
   
   img {
     width: 100%;
@@ -60,12 +94,12 @@
 
 .hero__item{
   width: 100%;
-  max-width: 166px;
+  max-width: rem(166px);
   display: flex;
   font-family: Play;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: rem(16px);
+  line-height: rem(18px);
   align-items: center;
 }

@@ -1,7 +1,12 @@
 .interaktive-avatar{
-  width: 74px;
-  height: 74px;
-  margin-right: 7px;
+  width: rem(74px);
+  height: rem(74px);
+  margin-right: rem(7px);
+
+  @include tablets{
+    width: rem(74px);
+  height: rem(74px);
+  }
 
 
   &:last-child{
@@ -16,6 +21,6 @@
   
   border-radius: 50%;
   &:hover{
-    border: 4px solid #E01F3D;
+    border: rem(4px) solid #E01F3D;
   }
 }

@@ -1,18 +1,18 @@
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 
   &--hero {
     background-color: $gray;
-    padding: 25px 0 65px;
+    padding: rem(25px) 0 rem(65px);
     position: relative;
 
     &::after{
       content:'';
       position: absolute;
-      width: 46.32px;
-      height: 10.38px;
+      width: rem(15px);
+      height: rem(38px);
       background: #C4C4C4;
       transform: rotate(-45deg);
       right: 22%;
@@ -23,11 +23,11 @@
   &--offers {
     display: flex;
     align-items: center;
-    padding: 100px 0;
+    padding: rem(100px) 0;
 
     .section {
       &__top {
-        margin-bottom: 57px;
+        margin-bottom: rem(57px);
       }
     }
   }
@@ -35,7 +35,7 @@
   &--reviews{
     display: flex;
     align-items: center;
-    padding: 64px 0;
+    padding: rem(64px) 0;
   }
 
   &--order{
@@ -51,17 +51,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
 }
 
 .section__title{
   font-family: Play;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 52px;
+  font-size: rem(48px);
+  line-height: rem(52px);
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: rem(24px);
 }
 
 
@@ -69,10 +69,10 @@
   font-family: Play;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: rem(16px);
+  line-height: rem(19px);
   color: #666666;
   text-align: center;
-  width: 590px;
+  width: rem(590px);
  
 }

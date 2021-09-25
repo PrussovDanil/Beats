@@ -6,6 +6,14 @@ $z-fixed-menu:100;
 $red:#E01F3D;
 $gray:#F5F5F5;
 $black:#292929;
+//breakpionts
+
+$tablets: 768px;
+$phones: 480px;
+
+
+//setup
+@import './layout/_media.scss';
 
 @import './layout/normalize.scss';
 @import './layout/_base.scss';
@@ -19,3 +27,4 @@ $black:#292929;
 @import './blocks/_form.scss';
 @import './blocks/_radio.scss';
 @import './blocks/_fixed.scss';
+@import './blocks/_hamburger.scss';
