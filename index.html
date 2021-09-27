@@ -24,23 +24,30 @@
       <div class="container hero__container">
         <header class="header">   
           <div class="header__logo">
-            <a href="/" class="logo"><img src="./img/Vector.svg" alt="" class="logo__item"></a>
+            <a href="/" class="logo">
+              <svg class="logo__item">
+              <use xlink:href="./icon/sprite.svg#logo"></use>
+              </svg>
+            </a>
           </div>
           <div class="header__menu">
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item">О нас</li>
-                <li class="menu__item">Наушники</li>
-                <li class="menu__item">Команда</li>
-                <li class="menu__item">Цвета</li>
-                <li class="menu__item">Отзывы</li>
-                <li class="menu__item">Как мы работаем</li>
-                <li class="menu__item">Контакты </li>
+                <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Наушники</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Цвета</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Контакты</a> </li>
               </ul>
             </nav>
           </div>
           <div class="header__contact">
             <address class="header__address">
+              <svg class="header__phone-icon">
+                <use xlink:href="./icon/sprite.svg#phone"></use>
+              </svg>
               <a href="tel:+78 800 700 30 30" class="contact__phone header__contact-phone">8 800 700 30 30</a>
   
             </address>
@@ -68,17 +75,29 @@
           <ul class="hero__list">
             <li class="hero__item">
               <div class="hero__item-img">
-                <img src="./icon/main-1.svg" alt="" >
+               
+                <svg class="hero__item-img">
+                  <use xlink:href="./icon/sprite.svg#ahead"></use>
+                </svg>
               </div>
               <span>Безупречный звук</span>
             </li>
             <li class="hero__item">
-              <div class="hero__item-img"><img src="./icon/main-2.svg" alt="" ></div>
+              <div class="hero__item-img">
+               
+                <svg class="hero__item-img">
+                  <use xlink:href="./icon/sprite.svg#battery"></use>
+                </svg>
+              </div>
               <span>До 40 часов работы</span>
             </li>
             <li class="hero__item">
-              <div class="hero__item-img"> <img src="./icon/main-3.svg" alt="" ></div>
-             
+              <div class="hero__item-img">
+               
+                <svg class="hero__item-img">
+                  <use xlink:href="./icon/sprite.svg#charge"></use>
+                </svg>
+              </div>
               <span>Технология Fast Fuel  </span>
             </li>
           </ul>

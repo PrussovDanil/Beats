@@ -22,15 +22,14 @@
 
 
     &::before{
-      content:url(../../img/headphones700.png);
+      content:url(./../img/headphones700.png);
       margin-bottom: 58px;
     }
   }
 }
 
 .hero__headphones {
-  width: 100%;
-  max-width: rem(489px);
+  width: 50%;
   position: absolute;
   right: 0;
   top: rem(-60px);
@@ -68,7 +67,7 @@
   line-height: rem(25px);
   margin-bottom: rem(35px);
   @include tablets{
-    padding: 0 19%; 
+   
   }
 }
 

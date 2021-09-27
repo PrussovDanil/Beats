@@ -80,7 +80,7 @@ input {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
-  min-width: rem(1100px);
+  
 }
 
 
@@ -91,8 +91,6 @@ input {
   width: 95%;
   max-width: $containerWidth;
 
-  // @include phones{
-  //   max-width: 480px;
-  // }
+ 
   
 }

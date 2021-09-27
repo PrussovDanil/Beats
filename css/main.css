@@ -420,7 +420,6 @@ input {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
-  min-width: 61.1111111111rem;
 }
 
 .container {
@@ -441,6 +440,11 @@ input {
           justify-content: space-between;
   margin-bottom: 5.5555555556rem;
 }
+@media screen and (max-width: 768px) {
+  .header {
+    margin-bottom: 2.7777777778rem;
+  }
+}
 
 .header__menu {
   display: -webkit-box;
@@ -452,15 +456,23 @@ input {
   margin-right: -2.3333333333rem;
 }
 
+.logo__item {
+  width: 40px;
+  height: 40px;
+}
+
 .header__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: Play;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
   line-height: 1rem;
-}
-.header__address::before {
-  content: url(../../icon/Vector.png);
 }
 @media screen and (max-width: 768px) {
   .header__address::before {
@@ -474,10 +486,30 @@ input {
   }
 }
 
-.contact__phone {
-  text-decoration: none;
+.header__phone-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.2777777778rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media screen and (max-width: 768px) {
+  .header__phone-icon {
+    display: none;
+  }
 }
 
+.contact__phone {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.menu {
+  margin: 0 2.7777777778rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
@@ -488,6 +520,11 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu__item {
@@ -497,6 +534,11 @@ input {
 }
 .menu__item:last-child {
   margin-right: 0;
+}
+
+.menu__link {
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .hero__container {
@@ -547,14 +589,13 @@ input {
     text-align: center;
   }
   .hero__content::before {
-    content: url(../../img/headphones700.png);
+    content: url(./../img/headphones700.png);
     margin-bottom: 58px;
   }
 }
 
 .hero__headphones {
-  width: 100%;
-  max-width: 27.1666666667rem;
+  width: 50%;
   position: absolute;
   right: 0;
   top: -3.3333333333rem;
@@ -603,12 +644,6 @@ input {
   line-height: 1.3888888889rem;
   margin-bottom: 1.9444444444rem;
 }
-@media screen and (max-width: 768px) {
-  .hero__subtitle {
-    padding: 0 19%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .hero__possibilities {
     display: none;
@@ -831,7 +866,7 @@ input {
   line-height: 1.0555555556rem;
   color: #666666;
   text-align: center;
-  width: 32.7777777778rem;
+  max-width: 32.7777777778rem;
 }
 
 .btn {
@@ -905,12 +940,7 @@ input {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 1.7777777778rem 1.4444444444rem 1.6666666667rem 2rem;
-}
-@media screen and (max-width: 480px) {
-  .reviews__content {
-    padding: 1.3888888889rem 10.8333333333rem;
-  }
+  padding: 1.7777777778rem 0.5555555556rem;
 }
 
 .review__title {
@@ -988,7 +1018,7 @@ input {
 }
 @media screen and (max-width: 480px) {
   .form {
-    padding: 0px 28%;
+    padding: 0px 2%;
   }
 }
 
@@ -1110,7 +1140,7 @@ input {
   height: 0.8333333333rem;
   border-radius: 10%;
   content: "";
-  background: url(../../icon/ang.svg) center center no-repeat;
+  background: url(./../icon/ang.svg\) center center no-repeat;
 }
 
 .radio__elem {
@@ -1137,8 +1167,7 @@ input {
   height: 0.7777777778rem;
   background: #E01F3D;
   border-radius: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .radio__title {
