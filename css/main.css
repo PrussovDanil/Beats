@@ -638,6 +638,11 @@ input {
   line-height: 2.8888888889rem;
   margin-bottom: 0.7777777778rem;
 }
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-size: 2.0555555556rem;
+  }
+}
 
 .hero__subtitle {
   font-size: 1.1666666667rem;
@@ -1140,7 +1145,7 @@ input {
   height: 0.8333333333rem;
   border-radius: 10%;
   content: "";
-  background: url(./../icon/ang.svg\) center center no-repeat;
+  background: url(./../icon/ang.svg) center center no-repeat;
 }
 
 .radio__elem {
@@ -1167,7 +1172,8 @@ input {
   height: 0.7777777778rem;
   background: #E01F3D;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .radio__title {
