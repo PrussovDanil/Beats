@@ -784,6 +784,11 @@ input {
   color: #666666;
 }
 
+.offers__top-icon {
+  width: 68px;
+  height: 65px;
+}
+
 .section {
   height: 100vh;
   min-height: 36.1111111111rem;
