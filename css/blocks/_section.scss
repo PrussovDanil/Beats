@@ -44,6 +44,14 @@
     background:url(./../img/background__form.png) center center/cover no-repeat;
     color: #fff;
   }
+
+
+  &--choice{
+    display: flex;
+    align-items: center;
+    background: #F8FAF9;
+    padding: 94px 0px;
+  }
 }
 
 .section__top{
