@@ -1,5 +1,5 @@
-const burger = document.querySelector("#hamburger");
-const menu = document.querySelector("#menu");
+const burger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu__mob");
 const closeBtn = document.querySelector(".menu__mob--close");
 
 
