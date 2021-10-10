@@ -17,3 +17,17 @@
   bottom: 0;
   left: 0;
 }
+
+
+.active__reviews{
+  position: static;
+  display: flex;
+  opacity: 1;
+  pointer-events: unset;
+  
+}
+
+.active__switcher{
+  border: rem(4px) solid #E01F3D;
+  border-radius: 50% ;
+}

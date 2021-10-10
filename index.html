@@ -13,6 +13,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"    />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <title>BEATS</title>
 </head>
 <body>
@@ -58,7 +63,7 @@
             <span class="hamburger__plank"></span>
             <span class="hamburger__plank"></span>
           </a>
-
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         </header>
         
         <div class="hero__content">
@@ -170,89 +175,378 @@
 
     <section class="section section--choice">
       <div class="container">
-        <div class="choice">
-          <div class="choice__arrow choice__arrow--left"><a href="" class="choice__arrow-link"><img src="./icon/Arrow__left.svg" alt="" class="arrow__left"></a></div>
-          <div class="choice__main">
-            <div class="choise__img"><img src="./img/Ellipse 6.png" alt="" class="choise__img-item"></div>
-            <div class="choise__content">
-              <div class="choice__dropdowns">
-              <div class="choice__dropdown">
-                <img src="./icon/Vector.svg" alt="" class="choise__dropdown--img">
-              </div>
-              <div class="choice__dropdown-item">
-                <ul class="dropdown">
-                    <li class="dropdown__elim">
-                      <div class="dropdown__item">
-                        <div class="dropdown__item--img"><img src="./icon/blu.svg" alt=""></div>
-                        <span>Bluetooth</span>
-                      </div>
-                      <div class="dropdown__item-num">4.0</div>
-                    </li>
-                    <li class="dropdown__elim">
-                      <div class="dropdown__item">
-                        <div class="dropdown__item--img"><img src="./icon/maps.svg" alt=""></div>
-                        <span>Дальность </span>
-                      </div>
-                      <div class="dropdown__item-num">12 м</div>
-                    </li>
-                    <li class="dropdown__elim">
-                      <div class="dropdown__item">
-                        <div class="dropdown__item--img"><img src="./icon/charge.svg" alt=""></div>
-                        <span>Зарядка</span>
-                      </div>
-                      <div class="dropdown__item-num">3 ч</div>
-                    </li>
-                    <li class="dropdown__elim">
-                      <div class="dropdown__item">
-                        <div class="dropdown__item--img"><img src="./icon/washing-powder.svg" alt=""></div>
-                        <span>Вес</span>
-                      </div>
-                      <div class="dropdown__item-num">215гр</div>
-                    </li>
-                    <li class="dropdown__elim">
-                      <div class="dropdown__item">
-                        <div class="dropdown__item--img"><img src="./icon/apitherapy.svg" alt=""></div>
-                        <span>Гарантия</span>
-                      </div>
-                      <div class="dropdown__item-num">1 год</div>
-                    </li>
-                  </ul>
-                </div>
+        
+        <div class="choice ">
+          <div class="choice__arrow choice__arrow--left "><a href="" class="choice__arrow-link"><img src="./icon/Arrow__left.svg" alt="" class="arrow__left"></a></div>
+          <div class="choise__con swiper">
+            
+            <ul class="choice__list swiper-wrapper">
+              <li class="choice__main swiper-slide">
+                <div class="choise__img"><img src="./img/Ellipse 6.png" alt="" class="choise__img-item"></div>
+                <div class="choise__content">
+                  <div class="choice__dropdowns">
+                  <div class="choice__dropdown">
+                    <img src="./icon/Vector.svg" alt="" class="choise__dropdown--img">
+                  </div>
+                  <div class="choice__dropdown-item">
+                    <ul class="dropdown">
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/blu.svg" alt=""></div>
+                            <span>Bluetooth</span>
+                          </div>
+                          <div class="dropdown__item-num">4.0</div>
+                        </li>
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/maps.svg" alt=""></div>
+                            <span>Дальность </span>
+                          </div>
+                          <div class="dropdown__item-num">12 м</div>
+                        </li>
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/charge.svg" alt=""></div>
+                            <span>Зарядка</span>
+                          </div>
+                          <div class="dropdown__item-num">3 ч</div>
+                        </li>
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/washing-powder.svg" alt=""></div>
+                            <span>Вес</span>
+                          </div>
+                          <div class="dropdown__item-num">215гр</div>
+                        </li>
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/apitherapy.svg" alt=""></div>
+                            <span>Гарантия</span>
+                          </div>
+                          <div class="dropdown__item-num">1 год</div>
+                        </li>
+                      </ul>
+                    </div>
+                      
+                    </div>
                   
-                </div>
-              
-              <div class="choice__title">
-                <h2  class="choice__text">BEATS SOLO 3. ЦВЕТ  «АТЛАСНОЕ СЕРЕБРО»</h2>
-              </div>
-              <div class="choice__subtitle">
-                <div class="choice__subtitle-text">
-                  <span>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</span>
-                </div>
-                <div class="choice__feature">
-                  <div class="choice__feature--text">
-                    <div class="choice__name">Зарядка</div>
-                    <div class="choice__desc">2  часа</div>
+                  <div class="choice__title">
+                    <h2  class="choice__text">BEATS SOLO 3. ЦВЕТ  «АТЛАСНОЕ СЕРЕБРО»</h2>
                   </div>
-                  <div class="choice__feature--text">
-                    <div class="choice__name">Вес</div>
-                    <div class="choice__desc">215 грамм</div>
+                  <div class="choice__subtitle">
+                    <div class="choice__subtitle-text">
+                      <span>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</span>
+                    </div>
+                    <div class="choice__feature">
+                      <div class="choice__feature--text">
+                        <div class="choice__name">Зарядка</div>
+                        <div class="choice__desc">2  часа</div>
+                      </div>
+                      <div class="choice__feature--text">
+                        <div class="choice__name">Вес</div>
+                        <div class="choice__desc">215 грамм</div>
+                      </div>
+                    </div>
+                    <div class="choice__feature">
+                      <div class="choice__feature-price">14 990 ₽</div>
+                      <div class="choice__feature-btn btn">ЗАКАЗАТЬ</div>
+                    </div>
                   </div>
-                </div>
-                <div class="choice__feature">
-                  <div class="choice__feature-price">14 990 ₽</div>
-                  <div class="choice__feature-btn btn">ЗАКАЗАТЬ</div>
-                </div>
-              </div>
-              </div> 
-            </div>
-
+                  </div> 
+              </li>
+              <li class="choice__main swiper-slide ">
+                <div class="choise__img"><img src="./img/Ellipse 6.png" alt="" class="choise__img-item"></div>
+                <div class="choise__content">
+                  <div class="choice__dropdowns">
+                  <div class="choice__dropdown">
+                    <img src="./icon/Vector.svg" alt="" class="choise__dropdown--img">
+                  </div>
+                  <div class="choice__dropdown-item">
+                    <ul class="dropdown">
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/blu.svg" alt=""></div>
+                            <span>Bluetooth</span>
+                          </div>
+                          <div class="dropdown__item-num">4.0</div>
+                        </li>
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/maps.svg" alt=""></div>
+                            <span>Дальность </span>
+                          </div>
+                          <div class="dropdown__item-num">12 м</div>
+                        </li>
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/charge.svg" alt=""></div>
+                            <span>Зарядка</span>
+                          </div>
+                          <div class="dropdown__item-num">3 ч</div>
+                        </li>
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/washing-powder.svg" alt=""></div>
+                            <span>Вес</span>
+                          </div>
+                          <div class="dropdown__item-num">215гр</div>
+                        </li>
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/apitherapy.svg" alt=""></div>
+                            <span>Гарантия</span>
+                          </div>
+                          <div class="dropdown__item-num">1 год</div>
+                        </li>
+                      </ul>
+                    </div>
+                      
+                    </div>
+                  
+                  <div class="choice__title">
+                    <h2  class="choice__text">CJCB VJQ {EQ »</h2>
+                  </div>
+                  <div class="choice__subtitle">
+                    <div class="choice__subtitle-text">
+                      <span>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</span>
+                    </div>
+                    <div class="choice__feature">
+                      <div class="choice__feature--text">
+                        <div class="choice__name">Зарядка</div>
+                        <div class="choice__desc">2  часа</div>
+                      </div>
+                      <div class="choice__feature--text">
+                        <div class="choice__name">Вес</div>
+                        <div class="choice__desc">215 грамм</div>
+                      </div>
+                    </div>
+                    <div class="choice__feature">
+                      <div class="choice__feature-price">14 990 ₽</div>
+                      <div class="choice__feature-btn btn">ЗАКАЗАТЬ</div>
+                    </div>
+                  </div>
+                  </div> 
+              </li>
+              <li class="choice__main swiper-slide" >
+                <div class="choise__img"><img src="./img/Ellipse 6.png" alt="" class="choise__img-item"></div>
+                <div class="choise__content">
+                  <div class="choice__dropdowns">
+                  <div class="choice__dropdown">
+                    <img src="./icon/Vector.svg" alt="" class="choise__dropdown--img">
+                  </div>
+                  <div class="choice__dropdown-item">
+                    <ul class="dropdown">
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/blu.svg" alt=""></div>
+                            <span>Bluetooth</span>
+                          </div>
+                          <div class="dropdown__item-num">4.0</div>
+                        </li>
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/maps.svg" alt=""></div>
+                            <span>Дальность </span>
+                          </div>
+                          <div class="dropdown__item-num">12 м</div>
+                        </li>
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/charge.svg" alt=""></div>
+                            <span>Зарядка</span>
+                          </div>
+                          <div class="dropdown__item-num">3 ч</div>
+                        </li>
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/washing-powder.svg" alt=""></div>
+                            <span>Вес</span>
+                          </div>
+                          <div class="dropdown__item-num">215гр</div>
+                        </li>
+                        <li class="dropdown__elim">
+                          <div class="dropdown__item">
+                            <div class="dropdown__item--img"><img src="./icon/apitherapy.svg" alt=""></div>
+                            <span>Гарантия</span>
+                          </div>
+                          <div class="dropdown__item-num">1 год</div>
+                        </li>
+                      </ul>
+                    </div>
+                      
+                    </div>
+                  
+                  <div class="choice__title">
+                    <h2  class="choice__text">BEATS SOLO 3. ЦВЕТ  «АТЛАСНОЕ СЕРЕБРО»</h2>
+                  </div>
+                  <div class="choice__subtitle">
+                    <div class="choice__subtitle-text">
+                      <span>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</span>
+                    </div>
+                    <div class="choice__feature">
+                      <div class="choice__feature--text">
+                        <div class="choice__name">Зарядка</div>
+                        <div class="choice__desc">2  часа</div>
+                      </div>
+                      <div class="choice__feature--text">
+                        <div class="choice__name">Вес</div>
+                        <div class="choice__desc">215 грамм</div>
+                      </div>
+                    </div>
+                    <div class="choice__feature">
+                      <div class="choice__feature-price">14 990 ₽</div>
+                      <div class="choice__feature-btn btn">ЗАКАЗАТЬ</div>
+                    </div>
+                  </div>
+                  </div> 
+              </li>
+            </ul>
           
-          <div class="choice__arrow choice__arrow--right"><a href="" class="choice__arrow-link"><img src="./icon/Arrow__rigth.svg" alt="" class="arrow__right"></a>
           </div>
+          <div class="choice__arrow choice__arrow--right "><a href="./icon/Arrow__left.svg" class="choice__arrow-link"><img src="./icon/Arrow__rigth.svg" alt="" class="arrow__right"></a>
+         
+          </div>
+          
+  
+          
         </div>
         </div>
        </div>
     </section>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    
+    
+  
+    <section class="section section--team">
+      <div class="container">
+        <h2 class="team__title">Команда</h2>
+        <ul class="team team--version--desktop">
+          <li class="team__item">
+            <div class="team__memeber"><img src="./img/Boris.png" alt="" class="team__memeber--img"></div>
+            <button class="team__name" type="button">Борис Федорович</button>
+            <div class="team__content">
+              <div class="team__content--block">
+                <div class="team__occ">Главный технолог</div>
+                <div class="team_content-text">Отвечает за вкусовые качества 
+                  и калорийность.
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <div class="team__memeber"><img src="./img/Alla.png" alt="" class="team__memeber--img"></div>
+            <button class="team__name" type="button">Алла Иванова</button>
+            <div class="team__content">
+              <div class="team__content--block">
+                <div class="team__occ">Специалист по упаковке
+                </div>
+                <div class="team_content-text">Автор запоминающегося стиля 
+                  наших батончиков.
+                  
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <div class="team__memeber"><img src="./img/Kirill.png" alt="" class="team__memeber--img"></div>
+            <button class="team__name" type="button">Кирилл Матросов</button>
+            <div class="team__content">
+              <div class="team__content--block">
+                <div class="team__occ">Оператор
+                </div>
+                <div class="team_content-text">Разработал дизан
+                  наушников beats solo 3.
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <div class="team__memeber"><img src="./img/Mila.png" alt="" class="team__memeber--img"></div>
+            <button class="team__name" type="button">Мила Рыжкова</button>
+            <div class="team__content">
+              <div class="team__content--block">
+                <div class="team__occ">PR, маркетинг
+
+                </div>
+                <div class="team_content-text">По всем вопросам сотрудничества 
+                  и рекламы писать только Миле. 
+                  
+                  </div>
+              </div>
+            </div>
+          </li>
+          
+
+        </ul>
+
+        <ul class="team team--version--phone">
+          <li class="team__item">
+            
+            <button class="team__name" type="button">Борис Федорович</button>
+            <div class="team__content">
+              <div class="team__content--block">
+                <div class="team__memeber"><img src="./img/Boris.png" alt="" class="team__memeber--img"></div>
+                <div class="team__occ">Главный технолог</div>
+                <div class="team_content-text">Отвечает за вкусовые качества 
+                  и калорийность.
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            
+            <button class="team__name" type="button">Алла Иванова</button>
+            <div class="team__content">
+              <div class="team__content--block">
+                <div class="team__memeber"><img src="./img/Alla.png" alt="" class="team__memeber--img"></div>
+                <div class="team__occ">Специалист по упаковке
+                </div>
+                <div class="team_content-text">Автор запоминающегося стиля 
+                  наших батончиков.
+                  
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+           
+            <button class="team__name" type="button">Кирилл Матросов</button>
+            <div class="team__content">
+              <div class="team__content--block">
+                 <div class="team__memeber"><img src="./img/Kirill.png" alt="" class="team__memeber--img"></div>
+                <div class="team__occ">Оператор
+                </div>
+                <div class="team_content-text">Разработал дизан
+                  наушников beats solo 3.
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            
+            <button class="team__name" type="button">Мила Рыжкова</button>
+            <div class="team__content">
+              <div class="team__content--block">
+                <div class="team__memeber"><img src="./img/Mila.png" alt="" class="team__memeber--img"></div>
+                <div class="team__occ">PR, маркетинг
+
+                </div>
+                <div class="team_content-text">По всем вопросам сотрудничества 
+                  и рекламы писать только Миле. 
+                  
+                  </div>
+              </div>
+            </div>
+          </li>
+          
+
+        </ul>
+
+      </div>
+    </section>
+
+    <script src="./js/team.js"></script>
 
 
     
@@ -261,7 +555,8 @@
         <h2 class="section__title">ОТЗЫВЫ</h2>
         <div class="reviews">
           <div class="reviews__display">
-            <div class="reviews__display-inner">
+           <ul class="reviews__list">
+            <li class="reviews__item active__reviews" data-linked-with="one">
               <div class="reviews__avatar"> 
                 <img src="./img/Billy.png" alt="" class="reviews__avatar-img">
               </div>
@@ -274,27 +569,61 @@
                   Билли Айлиш
                 </div>
               </article>
-            </div>
+            </li>
+            <li class="reviews__item" data-linked-with="two">
+              <div class="reviews__avatar"> 
+                <img src="./img/Vadim.png" alt="" class="reviews__avatar-img">
+              </div>
+              <article class="reviews__content">
+                <h3 class="review__title">Крутой дизайн</h3>
+                <div class="reviews__text">
+                  <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт.  </p>
+                </div>
+                <div class="reviews__author">
+                  Вадим Грачев
+
+                </div>
+              </article>
+            </li>
+            <li class="reviews__item" data-linked-with="three">
+              <div class="reviews__avatar"> 
+                <img src="./img/Maria.png" alt="" class="reviews__avatar-img">
+              </div>
+              <article class="reviews__content">
+                <h3 class="review__title">На долго хватает заряда</h3>
+                <div class="reviews__text">
+                  <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус. </p>
+                </div>
+                <div class="reviews__author">
+                  Мария Орлова
+                </div>
+              </article>
+            </li>
+            
+            
+           </ul>
             
           </div>
           <ul class="reviews__switcher">
               <li class="reviews__switcher-item interaktive-avatar">
-                <a href="" class="interaktive-avatar__link"></a>
-                <img src="./img/Billy.png" alt="" class=" interaktive-avatar__img">
+                <a href="" class="interaktive-avatar__link  " data-open="one"><img src="./img/Billy.png" alt="" class=" interaktive-avatar__img"></a>
+                
               </li>
               <li class="reviews__switcher-item interaktive-avatar">
-                <a href="" class="interaktive-avatar__link"></a>
-                <img src="./img/Vadim.png" alt="" class="interaktive-avatar__img">
+                <a href="" class="interaktive-avatar__link" data-open="two"><img src="./img/Vadim.png" alt="" class="interaktive-avatar__img"></a>
+                
               </li>
               <li class="reviews__switcher-item interaktive-avatar">
-                <a href="" class="interaktive-avatar__link"></a>
-                <img src="./img/Maria.png" alt="" class="interaktive-avatar__img">
+                <a href="" class="interaktive-avatar__link" data-open="three"><img src="./img/Maria.png" alt="" class="interaktive-avatar__img"></a>
+                
               </li>
           </ul>
         </div>
 
       </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/tabs.js"></script>
 
 
 
@@ -374,6 +703,21 @@
       </div>
     </section>
 
+    <div id="modal" class="modal">
+      <div class="modal__container">
+        <div class="modal__content">
+          Сообщение отпралено
+        </div>
+        <div class="modal__button-container">
+          <a href="#" class="btn btn--theme--red">Закрыть</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+    <script src="./js/modal.js"></script>
+
 
 
   </div>
@@ -425,5 +769,9 @@
       </li>
     </ul>
   </nav>
+
+  <script src="./js/jquery.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>
