@@ -1144,6 +1144,10 @@ input {
   }
 }
 
+.form--error {
+  border-color: #E01F3D;
+}
+
 .radio {
   display: -webkit-box;
   display: -ms-flexbox;

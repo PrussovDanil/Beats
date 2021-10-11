@@ -15,8 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"    />
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-
+  
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <title>BEATS</title>
 </head>
@@ -631,39 +630,40 @@
       <div class="container">
         <h2 class="form__title">ЗАКАЖИТЕ ДОСТАВКУ</h2>
         <form action="" class="form">
+          <input type="hidden" name="to" value="somewhere@mail.com">
           <div class="form__col">
             <div class="form__row">
               <label for="" class="form__block">
                 <div class="form__subtitle">Имя</div>
-                <input type="text" class="form__input">
+                <input type="text" name="name" class="form__input">
               </label>
               <label for="" class="form__block">
                 <div class="form__subtitle">Телефон</div>
-                <input type="text" class="form__input">
+                <input type="text" name="phone" class="form__input">
               </label>
             </div>
             <div class="form__row">
               <label for="" class="form__block">
                 <div class="form__subtitle">Улица</div>
-                <input type="text" class="form__input">
+                <input type="text" name="street" class="form__input">
               </label>
             </div>
             <div class="form__row">
               <label for="" class="form__block">
                 <div class="form__subtitle">Дом</div>
-                <input type="text" class="form__input">
+                <input type="text" name="home" class="form__input">
               </label>
               <label for="" class="form__block">
                 <div class="form__subtitle">Корпус</div>
-                <input type="text" class="form__input">
+                <input type="text" name="part" class="form__input">
               </label>
               <label for="" class="form__block">
                 <div class="form__subtitle">Квартира</div>
-                <input type="text" class="form__input">
+                <input type="text" name="apartment" class="form__input">
               </label>
               <label for="" class="form__block">
                 <div class="form__subtitle">Этаж</div>
-                <input type="text" class="form__input">
+                <input type="text" name="flour" class="form__input">
               </label>
             </div>
           </div>
@@ -671,7 +671,7 @@
             <div class="form__row form--input">
               <label for="" class="form__block">
                 <div class="form__subtitle">Комментарий</div>
-                <textarea   class="form__input form__input--textarea"></textarea>
+                <textarea   name="comment" class="form__input form__input--textarea"></textarea>
                 
               </label>
               <div class="form__controls">
@@ -702,20 +702,21 @@
         </form>
       </div>
     </section>
-
+  
     <div id="modal" class="modal">
       <div class="modal__container">
         <div class="modal__content">
           Сообщение отпралено
         </div>
         <div class="modal__button-container">
-          <a href="#" class="btn btn--theme--red">Закрыть</a>
+          <a href="#" class="btn app--submit--btn btn--theme--red">Закрыть</a>
         </div>
       </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+  
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="./js/modal.js"></script>
 
 
