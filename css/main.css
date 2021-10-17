@@ -1271,6 +1271,30 @@ input {
     display: inline-flex;
   }
 }
+.hamburger.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #313131;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20% 36%;
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 4rem;
+  color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
 .hamburger__plank {
   display: block;
@@ -1493,31 +1517,6 @@ input {
 .choice__dropdown-item:hover {
   visibility: visible;
   opacity: 1;
-}
-
-.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #313131;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20% 36%;
-  font-family: Play;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2rem;
-  line-height: 4rem;
-  color: #FFFFFF;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .active__reviews {
@@ -1877,15 +1876,39 @@ input {
 .player {
   position: relative;
 }
-.player::before {
-  content: url("./../../icon/playbig.svg");
+.player.actives .player__elem-big {
+  display: none;
+}
+.player.actives .player__play {
+  display: none;
+}
+.player.actives .player__pause {
+  display: block;
+}
+
+.player__wrapper {
+  max-width: 600px;
+  width: 100%;
+}
+
+.player__elem-big {
   position: absolute;
-  top: 45%;
-  left: 45%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.player__elem {
+  width: 100%;
 }
 
 .player__start {
   margin-right: 5px;
+}
+
+.player__pause {
+  display: none;
 }
 
 .player__controls {
@@ -1902,6 +1925,7 @@ input {
   bottom: 0;
   left: 0;
   right: 0;
+  height: 50px;
   background: #151515;
   color: #fff;
   padding-left: 10px;

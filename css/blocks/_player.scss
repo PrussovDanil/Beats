@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .play{
   background:#fff;
@@ -9,20 +10,51 @@
   
 }
 .player{
-  
   position: relative;
-  
-  &::before{
-    content: url('./../../icon/playbig.svg');
-    position: absolute;
-   
-    top: 45%;
-    left: 45%;
+  &.actives{
+    .player__elem-big{
+    display: none;
   }
+    
+    .player__play{
+      display: none;
+    }
+
+    .player__pause{
+      display: block;
+    }
+  
+
+  }
+}
+
+.player__wrapper{
+  
+  max-width: 600px;
+  width:100%;
+}
+
+.player__elem-big{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  
+}
+
+.player__elem{
+  width:100%;
 }
 
 .player__start{
   margin-right: 5px;
+
+  
+}
+
+.player__pause{
+  display: none;
 }
 
 .player__controls{
@@ -33,6 +65,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  height: 50px;
   background:#151515;
   color: #fff;
   padding-left: 10px;
