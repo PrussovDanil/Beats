@@ -884,7 +884,7 @@ input {
   font-weight: normal;
   font-size: 0.8888888889rem;
   line-height: 1.0555555556rem;
-  color: #666666;
+  color: #F5F5F5;
   text-align: center;
   max-width: 32.7777777778rem;
 }
@@ -1751,4 +1751,109 @@ input {
 
 .modal__content {
   margin-bottom: 1.1111111111rem;
+}
+
+.products-menu-section {
+  color: #fff;
+  background: url(./../../img/products.png) center center/cover no-repeat;
+  background-position-x: right;
+  /* Add this line */
+  background-position-y: center;
+  position: relative;
+}
+
+.products-menu-title {
+  position: absolute;
+  left: 20%;
+  top: 13%;
+  font-family: Play;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.6666666667rem;
+  line-height: 2.8888888889rem;
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.products-menu--black {
+  background: #292929;
+}
+.products-menu--red {
+  background: #E01F3D;
+}
+.products-menu--gray {
+  background: #666666;
+}
+
+.products-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.products-menu__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-writing-mode: lr-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: lr-tb;
+  width: 100px;
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.3888888889rem;
+}
+@media screen and (max-width: 480px) {
+  .products-menu__title {
+    width: 80px;
+  }
+}
+
+.products-menu__text {
+  padding: 30px;
+  position: relative;
+}
+
+.products-menu_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(47, 50, 52, 0.9);
+  position: relative;
+  overflow: hidden;
+  width: 0rem;
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
+}
+
+.products-menu__contaner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 39px;
+}
+
+.Opened {
+  padding: 30px;
 }
