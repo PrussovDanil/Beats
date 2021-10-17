@@ -1,0 +1,44 @@
+.player-section__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play{
+  background:#fff;
+
+  
+}
+.player{
+  
+  position: relative;
+  
+  &::before{
+    content: url('./../../icon/playbig.svg');
+    position: absolute;
+   
+    top: 45%;
+    left: 45%;
+  }
+}
+
+.player__start{
+  margin-right: 5px;
+}
+
+.player__controls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:#151515;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.player__playback-button{
+  color: red;
+}

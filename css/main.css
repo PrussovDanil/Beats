@@ -1857,3 +1857,57 @@ input {
 .Opened {
   padding: 30px;
 }
+
+.player-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.play {
+  background: #fff;
+}
+
+.player {
+  position: relative;
+}
+.player::before {
+  content: url("./../../icon/playbig.svg");
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+.player__start {
+  margin-right: 5px;
+}
+
+.player__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #151515;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.player__playback-button {
+  color: red;
+}
