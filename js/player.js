@@ -72,6 +72,7 @@ video.addEventListener("click", (e)=>{
 
 $(".player__playback").click(e=>{
   const bar = $(e.currentTarget);
+  const video = document.querySelector("#video");
   const clickPos=e.originalEvent.layerX; 
   const newBtnPos = (clickPos/ bar.width())*100;
 
@@ -89,7 +90,7 @@ $(".player__sound").click(e=>{
   const block = $(e.currentTarget);
   const clickPosVol=e.originalEvent.layerX; 
   const newSondPos = (clickPosVol/ block.width())*100;
-  const x= $(".player__sound-button").position();
+  const x= $(".player__sound-button");
 
   const newSoundkPos =(VolStat/100)*newSondPos;
 
@@ -97,9 +98,15 @@ $(".player__sound").click(e=>{
     left:`${newSondPos}%`
   });
 
-  if( x.left === 0){
-    video.volume = 0.0;
+  if( newSondPos< 11){
+    video.muted=true;
+    video.volume = newSoundkPos;
+  }else{
+    video.muted=false;
+    video.volume = newSoundkPos;
   }
-  video.volume = newSoundkPos;
-  console.log(x.left +"%");
+  
+  console.log(newSondPos);
 })
+
+
