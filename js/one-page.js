@@ -73,13 +73,15 @@ const perTrans = sectionEq=>{
 
 const  viewScroller= () =>{
   const activeSection = section.filter(".actives");
-  const nextSection =activeSection.next();
-  const prevSection =activeSection.prev();
+  const nextSection =activeSection.next("section");
+  const prevSection =activeSection.prev("section");
 
   return {
     next() {
         if(nextSection.length) {
           perTrans(nextSection.index());
+          
+          
         }
     },
     prev() {
@@ -96,19 +98,22 @@ const  viewScroller= () =>{
 $(window).on("wheel", e =>{
   const deltaY = e.originalEvent.deltaY;
   const scroller = viewScroller();
+  
 
   if(deltaY>0){
     scroller.next();
     
+    
   }
   if(deltaY<0){
     scroller.prev();
+    
   }
   
 });
 
 $(window).on("keydown", e=>{
-
+  
   const tagName = e.target.tagName.toLowerCase();
   const userTypingInInput = tagName === "input" || tagName === "textarea";
   const scroller = viewScroller();
@@ -137,14 +142,16 @@ $("[data-section-to]").click(e=>{
 
   const $this = $(e.currentTarget);
   const target = $this.attr("data-section-to");
-  const reqSection =$(`[data-section-id=${target}]`)
+  const reqSection = $(`[data-section-id=${target}]`)
   perTrans(reqSection.index());
+  
   
 });
 
 
 if(isMobile) {
-  $("body").swipe( {
+  
+  $("#body").swipe( {
       //Generic swipe handler for all directions
       swipe: function(event, direction) {
           const scroller = viewScroller();

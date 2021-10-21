@@ -16,13 +16,15 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"    />
   
+  
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=e05a3696-d6ab-4881-93ee-9ec12b8a76d4&lang=ru_RU" type="text/javascript">
   </script>
   <title>BEATS</title>
 </head>
-<body>
+<body id="body">
 
   <div class="wrapper">
     
@@ -338,7 +340,7 @@
       
        
     </section>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   
     
     <section data-sidemenu-theme="red"  data-section-id="team" class="section section--team">
       <div class="container">
@@ -507,7 +509,7 @@
         </li>
       </ul>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
     
     <section data-sidemenu-theme="red"  data-section-id="reviews" class="section section--reviews">
       <div class="container">
@@ -581,7 +583,7 @@
 
       </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
     
     <section data-sidemenu-theme="red"  data-section-id="player" data-sidemenu-theme="red" class="section player-section" data-section-id="player">
       <div class="container">
@@ -701,7 +703,7 @@
       </div>
     </section>
     <section data-sidemenu-theme="red" data-section-id="map" class="section map-section">
-      <div id="map"></div>
+      <div id="map" style="width: 100%; height: 100%"></div>
     </section>
     
   
@@ -718,7 +720,7 @@
   
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/maps.js"></script>
@@ -745,45 +747,50 @@
     <a href="#" class="menu__mob--close"><img src="./icon/x.svg" alt=""></a>
   </nav>
 
-  <script src="./js/menu.js"></script>
+  
 
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
      
       <li class="fixed-menu__item fixed-menu__item--active">
-        <a href="" data-scroll-to="hero" class="fixed-menu__link fixed-menu__item--active"></a>
+        <a href="#" data-section-to="hero" class="fixed-menu__link fixed-menu__item--active"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" data-scroll-to="offers" class="fixed-menu__link"></a>
+        <a href="#" data-section-to="offers" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" data-scroll-to="choice" class="fixed-menu__link"></a>
+        <a href="#" data-section-to="choice" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" data-scroll-to="team" class="fixed-menu__link"></a>
+        <a href="#" data-section-to="team" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" data-scroll-to="products" class="fixed-menu__link"></a>
+        <a href="#" data-section-to="products" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" data-scroll-to="reviews" class="fixed-menu__link"></a>
+        <a href="#" data-section-to="reviews" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" data-scroll-to="player" class="fixed-menu__link"></a>
+        <a href="#" data-section-to="player" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" data-section-to="order"class="fixed-menu__link"></a>
+        <a href="#" data-section-to="order" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" data-section-to="map" class="fixed-menu__link"></a>
+        <a href="#" data-section-to="map" class="fixed-menu__link"></a>
       </li>
     </ul>
   </nav>
-
-  <script src="./js/jquery.js"></script>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./node_modules/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
+ 
+ <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="./js/one-page.js"></script>
+  <script src="./js/menu.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.js" integrity="sha512-gRg3MTbqGUwZiqkDRUj7BJOqiYX6tQDAkZVq6zCHfRUxBhoW0kRG4ASllaK31PIe+I+xdaJhLcZXbs2O2r8SRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
 </body>
 </html>
