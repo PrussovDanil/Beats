@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"    />
   
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=e05a3696-d6ab-4881-93ee-9ec12b8a76d4&lang=ru_RU" type="text/javascript">
+  </script>
   <title>BEATS</title>
 </head>
 <body>
@@ -24,7 +27,7 @@
   <div class="wrapper">
     
   <div class="maincontent">
-    <section class="section section--hero">
+    <section data-sidemenu-theme="red" data-section-id="hero" class="section section--hero">
       <div class="container hero__container">
         <header class="header">   
           <div class="header__logo">
@@ -37,11 +40,11 @@
           <div class="header__menu">
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                <li class="menu__item"><a data-section-to ="offers" href="#" class="menu__link">О нас</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Наушники</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Цвета</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+                <li class="menu__item"><a data-section-to ="reviews" href="#" class="menu__link">Отзывы</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Контакты</a> </li>
               </ul>
@@ -69,7 +72,7 @@
           <div class="hero__text-section">
             <h1 class="hero__title">БЕСПРОВОДНЫЕ НАУШНИКИ BEATS SOLO 3 </h1>
             <h4 class="hero__subtitle">Встречайте новую версию наушников из линейки Powerbeats.</h4>
-            <a href="#" class="btn btn--theme--red">ЗАКАЗАТЬ</a>
+            <a href="#" class="btn btn--theme--red"data-section-to ="order">ЗАКАЗАТЬ</a>
           </div>
           <div class="hero__headphones">
             <img src="./img/heaphones.png" alt="headphones">
@@ -109,10 +112,7 @@
 
       </div>
     </section>
-
-
-
-    <section class="section section--offers">
+    <section  data-sidemenu-theme="red"  data-section-id="offers" class="section section--offers">
       <div class="container">
         <div class="section__top">
           <h2 class="section__title">ПОЧЕМУ BEATS SOLO 3?</h2>
@@ -169,10 +169,7 @@
         </ul>
       </div>
     </section>
-
-
-
-    <section class="section section--choice">
+    <section data-sidemenu-theme="red"  data-section-id="choice" class="section section--choice">
       <div class="container">
         
         <div class="choice ">
@@ -248,7 +245,7 @@
                     </div>
                     <div class="choice__feature">
                       <div class="choice__feature-price">14 990 ₽</div>
-                      <div class="choice__feature-btn btn">ЗАКАЗАТЬ</div>
+                      <div class="choice__feature-btn btn"data-section-to ="order">ЗАКАЗАТЬ</div>
                     </div>
                   </div>
                   </div> 
@@ -321,7 +318,7 @@
                     </div>
                     <div class="choice__feature">
                       <div class="choice__feature-price">14 990 ₽</div>
-                      <div class="choice__feature-btn btn">ЗАКАЗАТЬ</div>
+                      <div class="choice__feature-btn btn"data-section-to ="order">ЗАКАЗАТЬ</div>
                     </div>
                   </div>
                   </div> 
@@ -338,58 +335,12 @@
           
         </div>
         </div>
-       </div>
+      
+       
     </section>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="./js/slider.js"></script>
     
-
-
-    <section class="section products-menu-section">
-      <h1 class="section__title products-menu-title">Цвета</h1>
-      <ul class="products-menu ">
-        <li class="products-menu__item ">
-          <a href="" class="products-menu__title products-menu--gray"><div class="products-menu__text">«Атласное серебро»</div> </a>
-          <div class="products-menu_content">
-            <div class="products-menu__contaner">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatibus quam aliquam rerum similique dolor odio commodi nemo illo aperiam error, nostrum iure architecto! Sit minus enim neque vitae pariatur?</p>
-            <a href="#" class="products-menu__button">
-              <img src="./icon/close.svg" alt="" class="products-menu-item">
-            </a>
-            </div>
-          </div>
-        </li>
-        <li class="products-menu__item ">
-          <a href="" class="products-menu__title products-menu--black"><div class="products-menu__text">«Атласное серебро»</div></a>
-          <div class="products-menu_content">
-            <div class="products-menu__contaner">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatibus quam aliquam rerum similique dolor odio commodi nemo illo aperiam error, nostrum iure architecto! Sit minus enim neque vitae pariatur?</p>
-            <a href="#" class="products-menu__button">
-              <img src="./icon/close.svg" alt="" class="products-menu-item">
-            </a>
-            </div>
-          </div>
-          
-        </li>
-        <li class="products-menu__item ">
-          <a href="" class="products-menu__title products-menu--red"><div class="products-menu__text">«Атласное серебро»</div></a>
-          <div class="products-menu_content">
-            <div class="products-menu__contaner">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatibus quam aliquam rerum similique dolor odio commodi nemo illo aperiam error, nostrum iure architecto! Sit minus enim neque vitae pariatur?</p>
-            <a href="#" class="products-menu__button">
-              <img src="./icon/close.svg" alt="" class="products-menu-item">
-            </a>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="./js/prod.js"></script>
-    
-  
-    <section class="section section--team">
+    <section data-sidemenu-theme="red"  data-section-id="team" class="section section--team">
       <div class="container">
         <h2 class="team__title">Команда</h2>
         <ul class="team team--version--desktop">
@@ -516,12 +467,49 @@
 
       </div>
     </section>
-
-    <script src="./js/team.js"></script>
-
-
     
-    <section class="section section--reviews">
+    <section data-sidemenu-theme="black"  data-section-id="products" class="section products-menu-section">
+      <h1 class="section__title products-menu-title">Цвета</h1>
+      <ul class="products-menu ">
+        <li class="products-menu__item ">
+          <a href="" class="products-menu__title products-menu--gray"><div class="products-menu__text">«Атласное серебро»</div> </a>
+          <div class="products-menu_content">
+            <div class="products-menu__contaner">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatibus quam aliquam rerum similique dolor odio commodi nemo illo aperiam error, nostrum iure architecto! Sit minus enim neque vitae pariatur?</p>
+            <a href="#" class="products-menu__button">
+              <img src="./icon/close.svg" alt="" class="products-menu-item">
+            </a>
+            </div>
+          </div>
+        </li>
+        <li class="products-menu__item ">
+          <a href="" class="products-menu__title products-menu--black"><div class="products-menu__text">«Атласное серебро»</div></a>
+          <div class="products-menu_content">
+            <div class="products-menu__contaner">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatibus quam aliquam rerum similique dolor odio commodi nemo illo aperiam error, nostrum iure architecto! Sit minus enim neque vitae pariatur?</p>
+            <a href="#" class="products-menu__button">
+              <img src="./icon/close.svg" alt="" class="products-menu-item">
+            </a>
+            </div>
+          </div>
+          
+        </li>
+        <li class="products-menu__item ">
+          <a href="" class="products-menu__title products-menu--red"><div class="products-menu__text">«Атласное серебро»</div></a>
+          <div class="products-menu_content">
+            <div class="products-menu__contaner">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatibus quam aliquam rerum similique dolor odio commodi nemo illo aperiam error, nostrum iure architecto! Sit minus enim neque vitae pariatur?</p>
+            <a href="#" class="products-menu__button">
+              <img src="./icon/close.svg" alt="" class="products-menu-item">
+            </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <section data-sidemenu-theme="red"  data-section-id="reviews" class="section section--reviews">
       <div class="container">
         <h2 class="section__title">ОТЗЫВЫ</h2>
         <div class="reviews">
@@ -594,11 +582,49 @@
       </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/tabs.js"></script>
+    
+    <section data-sidemenu-theme="red"  data-section-id="player" data-sidemenu-theme="red" class="section player-section" data-section-id="player">
+      <div class="container">
+          <h2 class="section__title">Как мы работаем</h2>
+        <div class="player-section__container">
+          <div class="player ">
+            <div class="player__wrapper">
+              <video id="video" class="player__elem" poster="./img/splash_screen.jpg" >
+              <source src="./video/videoplayback.mp4">
+              </video>
+            <button class="player__elem-big player__button">
 
+              <img src="./icon/playbig.svg" alt="">
+            </button>
+             
+              
+            </div>
+            <div class="player__controls">
+              <button class="player__start player__button">
+                <img src="./icon/play.svg" alt="" class="player__play">
+                <img src="./icon/pause.svg" alt="" class="player__pause"> 
+              </button>
+              <div class="player__playback">
+                
+                <button class="player__playback-button button" id="durationLevel"></button>
+              </div>
+              <a href="" class="player__sound--volume">
+                <img src="./icon/volume.svg" alt="">
+              </a>
+              <div class="player__sound">
+                
+                <button class="player__sound-button button" id="durationLevel"></button>
+              </div>
 
-
-    <section class="section section--order">
+            </div>
+          </div>
+        </div>
+            
+      </div>
+    </section>
+    
+    
+    <section data-sidemenu-theme="red"  data-section-id="order" class="section section--order">
       <div class="container">
         <h2 class="form__title">ЗАКАЖИТЕ ДОСТАВКУ</h2>
         <form action="" class="form">
@@ -674,14 +700,10 @@
         </form>
       </div>
     </section>
-
-
-    <section class="section map-section">
+    <section data-sidemenu-theme="red" data-section-id="map" class="section map-section">
       <div id="map"></div>
     </section>
-
-    <script src="https://enterprise.api-maps.yandex.ru/2.1?apikey=e05a3696-d6ab-4881-93ee-9ec12b8a76d4=lang=ru_RU"></script>
-  <script class="./js/maps.js"></script>
+    
   
     <div id="modal" class="modal">
       <div class="modal__container">
@@ -695,10 +717,16 @@
     </div>
   
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="./js/modal.js"></script>
-
+    <script src="./js/maps.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/prod.js"></script>
+    <script src="./js/team.js"></script>
+    <script src="./js/slider.js"></script>
 
 
   </div>
@@ -706,13 +734,13 @@
 
   <nav class="menu__mob" >
     <ul class="menu__mob--list">
-      <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Наушники</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Цвета</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Контакты</a> </li>
+      <li class="menu__item"><a href="#"  class="menu__link">О нас</a></li>
+      <li class="menu__item"><a href="#"  class="menu__link">Наушники</a></li>
+      <li class="menu__item"><a href="#"  class="menu__link">Команда</a></li>
+      <li class="menu__item"><a href="#"  class="menu__link">Цвета</a></li>
+      <li class="menu__item"><a href="#"  class="menu__link">Отзывы</a></li>
+      <li class="menu__item"><a href="#"  class="menu__link">Как мы работаем</a></li>
+      <li class="menu__item"><a href="#"  class="menu__link">Контакты</a> </li>
     </ul>
     <a href="#" class="menu__mob--close"><img src="./icon/x.svg" alt=""></a>
   </nav>
@@ -721,38 +749,41 @@
 
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
+     
       <li class="fixed-menu__item fixed-menu__item--active">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="hero" class="fixed-menu__link fixed-menu__item--active"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="offers" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="choice" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="team" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="products" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="reviews" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-scroll-to="player" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-section-to="order"class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__link"></a>
+        <a href="" data-section-to="map" class="fixed-menu__link"></a>
       </li>
     </ul>
   </nav>
 
   <script src="./js/jquery.js"></script>
-
+  <script src="./js/one-page.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.js" integrity="sha512-gRg3MTbqGUwZiqkDRUj7BJOqiYX6tQDAkZVq6zCHfRUxBhoW0kRG4ASllaK31PIe+I+xdaJhLcZXbs2O2r8SRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-``
+
 const mesureWidth = item => {
   const desktopWidth = $(window).width();
   const list = item.closest(".products-menu ");

@@ -1,4 +1,4 @@
-const openItem = item =>{
+const openI = item =>  {
   const container = item.closest(".team__item");
   const contentBlock = container.find(".team__content");
   const textBlock = contentBlock.find(".team__content--block");
@@ -10,7 +10,7 @@ const openItem = item =>{
   contentBlock.height(reqHeight);
 }
 
-const closeItem = container =>{
+const closeI = container =>{
   const items = container.find(".team__content");
   const itemContainer = container.find(".team__item");
   const itemButton = container.find(".team__name");
@@ -26,10 +26,10 @@ $(".team__name").click((e)=>{
   const elemActive = $this.closest(".team__item")
 
   if(elemActive.hasClass("actives")){
-    closeItem(container);
+    closeI(container);
   }else{
-    closeItem(container);
-    openItem($this); 
+    closeI(container);
+    openI($this); 
   }
 
   

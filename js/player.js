@@ -5,23 +5,7 @@ const buttons = document.querySelectorAll(".player__button");
 const player = document.querySelector(".player ");
 const durationSec =video.duration;
 const durationSec2 =video.currentTime;
-
 const VolStat= video.volume= 1;
-
-console.log(video.volume);
-
-
-// const formaTime = timeSec =>{
-//   const roundTime = Math.round(timeSec);
-//   const minutes = Math.floor(roundTime/60);
-//   const seconds = roundTime - minutes * 60;
-
-//   return `${minutes} : ${seconds}`;
-// }
-
-
-
-
 
 interval = setInterval(()=>{
   const completedSec =video.currentTime;
@@ -75,6 +59,7 @@ $(".player__playback").click(e=>{
   const video = document.querySelector("#video");
   const clickPos=e.originalEvent.layerX; 
   const newBtnPos = (clickPos/ bar.width())*100;
+  
 
   const newPlaybackPos =(durationSec/100)*newBtnPos;
 
@@ -106,7 +91,17 @@ $(".player__sound").click(e=>{
     video.volume = newSoundkPos;
   }
   
-  console.log(newSondPos);
+  
 })
 
+
+$(".player__sound--volume").click(e=>{
+ e.preventDefault();
+ if(video.muted){
+   video.muted = false;
+ }else{
+  video.muted = true;
+ }
+ 
+})
 
