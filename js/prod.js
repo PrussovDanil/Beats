@@ -45,7 +45,7 @@ const closeItem = item => {
 const addWidth = (block, width, item) => {
   setTimeout(function(){
       item.addClass("Open");
-  }, 1000);
+  }, 400);
   return block.width(width);
 };
 
@@ -56,8 +56,8 @@ const openMobileItem = (item, desktopWidth, linksSum) => {
   const linkArr = linksSum.find(".products-menu__title");
   const linkWidth = item.width();
   const descWidth = desktopWidth - linkWidth;
-  const linkArrLen = linkArr.length;
-  for(let i = 0; i < linkArrLen; i++) {
+  const linkArrLen = linkArr.length-1;
+  for(let i = 0; i < linkArrLen+1; i++) {
       if(link[0] == linkArr[i]) {
           let linkRight = -(linkWidth * (linkArrLen - i));
           list.css("right", linkRight);

@@ -1,0 +1,57 @@
+
+.footer__map{
+  width:100%;
+  height: 90%;
+}
+.footer__section{
+  display: flex;
+  
+  
+  background: #fff;
+
+  
+}
+
+.footer__container{
+  
+  padding: 2% 0 ;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+.foooter__address{
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+
+.footer__location{
+  margin-bottom: 3px;
+}
+
+
+.socials__list{
+  display: flex;
+
+}
+
+.socials__item{
+  margin-right: 5px;
+}
+
+
+.socials__icon {
+  width: rem(36px);
+  height: rem(36px);
+  fill: #b2b2b2;
+  transition: fill .4s;
+
+  &:hover{
+    fill: #000;
+  }
+}

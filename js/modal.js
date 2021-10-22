@@ -57,6 +57,14 @@ $('.form').submit(e => {
           }]);
       });
   }
+  // else{
+  //   request.fail(data => {
+  //         const message = data.responseJSON.message;
+  //             content.text(message);
+  //             modal.addClass("error-modal");
+  //     });
+
+  // }
 });
 
 $(".app--submit--btn").click((e)=>{

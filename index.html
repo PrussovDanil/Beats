@@ -585,7 +585,7 @@
     </section>
     
     
-    <section data-sidemenu-theme="red"  data-section-id="player" data-sidemenu-theme="red" class="section player-section" data-section-id="player">
+    <section data-sidemenu-theme="red"  data-section-id="player" data-sidemenu-theme="red" class="section player-section section--player" data-section-id="player">
       <div class="container">
           <h2 class="section__title">Как мы работаем</h2>
         <div class="player-section__container">
@@ -703,14 +703,63 @@
       </div>
     </section>
     <section data-sidemenu-theme="red" data-section-id="map" class="section map-section">
-      <div id="map" style="width: 100%; height: 100%"></div>
+      <div id="map" class="footer__map"></div>
+      <footer class="section footer__section">
+        <div class="container footer__container">
+          <address class="header__address foooter__address">
+            <div class="footer__location">Москва, ул.Новый Арбат, д.31/12</div>
+            <div class="footer__phone--number">
+              <svg class="header__phone-icon">
+              <use xlink:href="./icon/sprite.svg#phone"></use>
+            </svg>
+            <a href="tel:+78 800 700 30 30" class="contact__phone header__contact-phone">8 800 700 30 30</a>
+            </div>
+           </address>
+           <div class="socials">
+            <ul class="socials__list">
+                <li class="socials__item">
+                    <a href="#" class="socials__item-link">
+                        <svg class="socials__icon">
+                            <use xlink:href="./icon/sprite.svg#f"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__item-link">
+                        <svg class="socials__icon">
+                            <use xlink:href="./icon/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__item-link">
+                        <svg class="socials__icon">
+                            <use xlink:href="./icon/sprite.svg#in"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a href="#" class="socials__item-link">
+                        <svg class="socials__icon">
+                            <use xlink:href="./icon/sprite.svg#tg"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+      </footer>
+  
     </section>
+
+    
+    
     
   
     <div id="modal" class="modal">
       <div class="modal__container">
         <div class="modal__content">
-          Сообщение отпралено
+          Сообщение  НЕ отпралено
         </div>
         <div class="modal__button-container">
           <a href="#" class="btn app--submit--btn btn--theme--red">Закрыть</a>
@@ -784,7 +833,7 @@
   
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="./node_modules/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
+  
  
  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="./js/one-page.js"></script>

@@ -16,7 +16,7 @@
       background: #C4C4C4;
       transform: rotate(-45deg);
       right: 22%;
-      bottom: 0;
+      bottom: -2%;
     }
   }
 
@@ -24,6 +24,17 @@
     display: flex;
     align-items: center;
     padding: rem(100px) 0;
+    position: relative;
+    &::before{
+      content:url('./../../icon/triangle.png');
+      position: absolute;
+      width: rem(30px);
+      height: rem(30px);
+      
+     
+      left: 22%;
+      bottom: 10%;
+    }
 
     .section {
       &__top {
@@ -36,7 +47,34 @@
     display: flex;
     align-items: center;
     padding: rem(64px) 0;
+    position: relative;
+    &::before{
+      content:'';
+      position: absolute;
+      width: rem(15px);
+      height: rem(38px);
+      background: #C4C4C4;
+      transform: rotate(-45deg);
+      left: 22%;
+      bottom: -2%;
+    }
+    }
   }
+
+  &--player{
+    position: relative;
+    &::after{
+      content:'';
+      position: absolute;
+      width: rem(15px);
+      height: rem(38px);
+      background: #C4C4C4;
+      transform: rotate(-45deg);
+      right: 22%;
+      bottom: -2%;
+    }
+    }
+  
 
   &--order{
     display: flex;
@@ -51,8 +89,20 @@
     align-items: center;
     background: #F8FAF9;
     padding: 94px 0px;
-  }
-}
+    position: relative;
+    &::after{
+      content:'';
+      position: absolute;
+      width: rem(15px);
+      height: rem(38px);
+      background: #C4C4C4;
+      transform: rotate(-45deg);
+      right: 22%;
+      bottom: -2%;
+    }
+    }
+  
+
 
 .section__top{
   display: flex;
@@ -81,7 +131,7 @@
   font-weight: normal;
   font-size: rem(16px);
   line-height: rem(19px);
-  color: #F5F5F5;
+  color: #666666;
   text-align: center;
   max-width: rem(590px);
  
